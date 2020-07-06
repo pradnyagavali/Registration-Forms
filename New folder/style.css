@@ -1,0 +1,104 @@
+body{
+	/*background: #673AB7;
+	background:#F06792 ;*/
+	/*background: linear-gradient(to right, orange , green); */
+	background: linear-gradient(to right, #424949, #7D6608);
+	font-family: sans-serif;
+}
+h1{
+	text-align: center;
+	color: white;
+	font-family: Fixed, monospace;
+}
+
+form{
+	width: 500px;
+	margin: 8% auto;
+	padding: 50px 0;
+	text-align: center;
+	box-shadow: 0 20px 40px rgb(0,0,0);
+}
+.input-box{
+	margin: 30px auto;
+	width: 80%;
+	position: relative;
+	box-shadow: 0 8px 10px -10px rgb(0,0,0);
+}
+.input-box input{
+	width: 90%;
+	height: 40px;
+	border: none;
+	/* background: green;/*#efefef;
+	background: linear-gradient(to right, #E67E22, #48C9B0);*/
+	background: linear-gradient(to right, #B2BABB, #7D6608);
+	padding-left: 50px;
+}
+span{
+	position: absolute;
+	left: 0;
+	top:0;
+	height: 41px;
+	width: 40px;
+	/*background: linear-gradient(to right, #4CAF50, #00BCD4); */
+	background: linear-gradient(to right, #F0B27A , #515A5A );
+	/*border: 2px solid black;*/
+
+}
+span .fa{
+	padding: 10px;
+	color: #fff;
+
+}
+button{
+	width: 130px;
+	height: 40px;
+	margin-left: 10%;
+	display: block;
+	color: #fff;
+	border: 0;
+	font-size: 16px;
+	outline: none;
+	border: 2px solid black;
+	box-shadow: 0 8px 10px -10px rgb(0,0,0);
+	background: linear-gradient(to right, #EC7063  , #515A5A);
+	cursor: pointer;
+	border-radius: 10px;
+}
+button .fa{
+	margin-right: 10px;
+}
+form img{
+	width: 100px;
+	margin-top: -100px;
+}
+.password-strength-indicator{
+	font-size: 12px;
+	display: inline-block;
+	height: 15px;
+	min-width: 20%;
+	text-align: center;
+	transition: 1s;
+	margin: 50px 0;
+	color: #fff;
+
+}
+.password-strength-indicator.very-weak{
+	background: #EB5445;
+	width: 20%;
+}
+.password-strength-indicator.weak{
+	background: #EB8A45 ;
+	width: 40%;
+}
+.password-strength-indicator.mediocre{
+	background: #E8C53B ;
+	width: 60%;
+}
+.password-strength-indicator.strong{
+	background: #C9E83B ;
+	width: 80%;
+}
+.password-strength-indicator.very-strong{
+	background: #78E83B ;
+	width: 100%;
+}

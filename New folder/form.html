@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js" ></script>
+	<script type="text/javascript" src="jquery.passwordstrength.js"></script>
+</head>
+<body>
+	<h1>Registration Form</h1>
+	<form>
+		<img src="3.png">
+		<div class="input-box">
+			<span><i class="fa fa-user-o" ></i>
+</span><input type ="text" placeholder="User Name" required>	
+		</div>
+
+		<div class="input-box">
+			<span><i class="fa fa-envelope-o" ></i>
+</span><input type ="email" placeholder="Email" required>	
+		</div>
+
+		<div class="input-box">
+			<span><i class="fa fa-key" ></i>
+</span><input type ="password" id="password" placeholder="Password" required>	
+		</div>
+		<button type="submit"><i class="fa fa-sign-in" ></i>Register</button>
+
+		<script type="text/javascript">
+    $(function() {
+        $("#password").passwordStrength();
+    });
+</script>
+		
+	</form>
+
+</body>
+</html>
